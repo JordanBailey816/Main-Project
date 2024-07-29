@@ -1,0 +1,562 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background: black;
+}
+body {
+    background: linear-gradient(rgba(20, 66, 109, 0.368),rgba(72, 73, 80, 0.7))
+}
+
+/* Nav Bar */
+
+nav img {
+    width: 250px;
+    padding-left: 8%;
+}
+nav {
+    display: flex;
+    padding: 2% 3%;
+    align-items: center;
+    justify-content: center;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 8px 10px;
+    position: relative;
+}
+.nav-links ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 1000;
+}
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: tan;
+    display: block;
+    margin: 0;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* Search Bar */
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 8px 20px;
+    height: 17px;
+    border-radius: 30px;
+    margin-right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border: solid darkgrey;
+}
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: solid darkgray;
+}
+.search button img {
+    width: 16px;
+}
+button {
+    margin-right: 40px;
+}
+
+/* Reviews Header */
+
+.review {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 0px;
+    margin-top: 30px;
+}
+h1 {
+    font-size: 100px;
+    color: white;
+    text-shadow: 3px 3px tan;
+}
+p {
+    color: black;
+    font-family: sans-serif;
+    font-size: 29px;
+    font-weight: 300;
+    padding: 10px;
+}
+.review hr {
+    height: 5px;
+    background-color: white;
+    text-shadow: 3px 3px tan;
+}
+
+/* Reviews Col */
+
+.review-col {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.review-col img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.review-col p {
+    padding: 0;
+}
+.review-col h3 {
+    margin-top: 15px;
+    text-align: left;
+}
+.row {
+    margin-top: 60px;
+}
+
+/* Numbers */
+
+.number {
+    display: flex;
+    padding: 2% 3%;
+    align-items: center;
+    justify-content: center;
+}
+.number ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 8px 10px;
+    position: relative;
+    font-size: 30px;
+}
+.number ul li a:hover {
+    color: red;
+}
+.number ul li a {
+    text-decoration: none;
+}
+
+/* Review Form */
+
+.freview {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+.freview h1 {
+    font-size: 100px;
+    color: white;
+    text-shadow: 3px 3px tan;
+    margin-top: 65px;
+}
+.freview hr {
+    height: 5px;
+    background-color: white;
+    text-shadow: 3px 3px tan;
+}
+
+/* Name Form */
+
+.freview-col1 {
+    text-align: center;
+    margin-top: 80px;
+}
+.freview-col1 input {
+    height: 50px;
+    width: 500px;
+    cursor: pointer;
+}
+.freview-col1 label {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+.freview-col1 input::placeholder {
+    font-size: 25px;
+}
+
+/* Comment Form */
+
+.freview-col2 {
+    text-align: center;
+    margin-top: 90px;
+}
+.freview-col2 input {
+    height: 300px;
+    width: 1000px;
+    cursor: pointer;
+}
+.freview-col2 label {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+.freview-col2 input::placeholder {
+    font-size: 25px;
+}
+
+/* Rate Stars Form */
+
+.freview-col3 {
+    text-align: center;
+    margin-top: 20px;
+}
+.freview-col3 input {
+    height: 25px;
+    width: 25px;
+}
+.freview-col3 label {
+    font-size: 25px;
+}
+#stars {
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+/* Input */
+
+input[type="text"] {
+    font-size: 25px;
+    border: 1px solid;
+}
+input[type="radio"] {
+    margin: 0 15px;
+}
+
+/* Submit */
+
+.submit input {
+    width: 150px;
+    height: 30px;
+    font-size: 25px;
+    margin-left: 68%;
+    margin-top: 4%;
+    cursor: pointer;
+}
+.submit input:hover {
+    background-color: red;
+}
+
+/* Reset */
+
+.reset input {
+    width: 150px;
+    height: 30px;
+    font-size: 25px;
+    margin-left: 68%;
+    margin-top: 1.5%;
+    cursor: pointer;
+}
+.reset input:hover {
+    background-color: red;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    text-align: center;
+    background: black;
+    margin-top: 3%;
+    border: white solid 1px;
+}
+.footer h4 {
+    margin-bottom: 35px;
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+}
+.footer p {
+    color: white;
+}
+.footer-col p {
+    display: inline-block;
+    text-align: center;
+    padding-left: 5%;
+}
+.footer-col p a {
+    text-decoration: none;
+}
+.footer-col p a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: tan;
+    display: block;
+    margin: 0;
+    transition: 0.5s;
+}
+.footer-col p a:hover::after {
+    width: 100%;
+}
+
+/* Responsive for Phone -------------------------------------------*/
+
+@media(max-width: 700px) {
+    
+    /* Nav Bar */
+
+nav img {
+    width: 150px;
+    margin-bottom: 100px;
+}
+.nav-links ul li {
+    display: block; 
+}
+.nav-links ul li a {
+    font-size: 10px;
+}
+
+/* Search Bar */
+
+.search input {
+    height: 0;
+    width: 100px; 
+}
+.search button {
+    width: 17px;
+    height: 17px;
+}
+.search button img {
+    width: 17px;
+}
+
+/* Reviews Header */
+
+h1 {
+    font-size: 40px;
+}
+p {
+    font-size: 20px;
+}
+
+/* Reviews Col */
+
+.review-col p {
+    font-size: 20px;
+}
+
+/* Numbers */
+
+.number ul li {
+    font-size: 20px;
+}
+
+/* Review Form */
+
+.freview h1 {
+    font-size: 40px;
+}
+
+/* Name Form */
+
+.freview-col1 input {
+    height: 30px;
+    width: 250px;
+}
+.freview-col1 label {
+    font-size: 20px;
+}
+.freview-col1 input::placeholder {
+    font-size: 20px;
+}
+
+/* Comment Form */
+
+.freview-col2 input {
+    height: 250px;
+    width: 250px;
+}
+.freview-col2 label {
+    font-size: 20px;
+}
+.freview-col2 input::placeholder {
+    font-size: 20px;
+}
+
+/* Rate Stars Form */
+
+.freview-col3 input {
+    height: 25px;
+    width: 25px;
+}
+.freview-col3 label {
+    font-size: 20px;
+}
+#stars {
+    font-size: 20px;
+}
+
+/* Input */
+
+input[type="text"] {
+    font-size: 20px;
+    border: 1px solid;
+}
+input[type="radio"] {
+    margin: 0 15px;
+}
+
+/* Submit */
+
+.submit input {
+    width: 100px;
+    height: 25px;
+    font-size: 20px;
+}
+
+/* Reset */
+
+.reset input {
+    width: 100px;
+    height: 25px;
+    font-size: 20px;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+.footer h4 {
+    font-size: 15px;
+}
+.footer p {
+    font-size: 15px;
+}
+}
+
+/* Responsive for Tablet ----------------------------------------------*/
+
+@media(min-width: 768px) and (max-width: 1023px) {
+     
+/* Nav Bar */
+    
+nav img {
+    width: 150px;
+    padding-left: 8%;
+}
+.nav-links ul li a {
+    font-size: 15px;
+}
+
+/* Search Bar */
+
+.search input {
+    height: 7px;
+    font-size: 15px;
+}
+.search button {
+    width: 25px;
+    height: 25px;
+}
+
+/* Reviews Header */
+
+h1 {
+    font-size: 80px;
+}
+p {
+    font-size: 20px;
+}
+
+/* Review Form */
+
+.freview h1 {
+    font-size: 80px;
+}
+
+/* Name Form */
+
+.freview-col1 input {
+    height: 35px;
+}
+.freview-col1 input::placeholder {
+    font-size: 20px;
+}
+
+/* Comment Form */
+
+.freview-col2 input {
+    height: 300px;
+    width: 600px;
+}
+.freview-col2 input::placeholder {
+    font-size: 20px;
+}
+
+/* Rate Stars Form */
+
+.freview-col3 input {
+    height: 20px;
+    width: 20px;
+}
+.freview-col3 label {
+    font-size: 20px;
+}
+#stars {
+    font-size: 20px;
+}
+
+/* Submit */
+
+.submit input {
+    width: 120px;
+    height: 35px;
+}
+
+/* Reset */
+
+.reset input {
+    width: 120px;
+    height: 35px;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    padding-left: 20px 0;
+}
+.footer h4 {
+    font-size: 25px;
+}
+.footer p {
+    font-size: 25px;
+}
+}
+

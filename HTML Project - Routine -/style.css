@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background: black;
+}
+body {
+    background: linear-gradient(rgba(20, 66, 109, 0.368),rgba(72, 73, 80, 0.7))
+}
+
+/* Nav Bar */
+
+nav img {
+    width: 250px;
+    padding-left: 8%;
+}
+nav {
+    display: flex;
+    padding: 2% 3%;
+    align-items: center;
+    justify-content: center;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 8px 10px;
+    position: relative;
+}
+.nav-links ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 1000;
+}
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: tan;
+    display: block;
+    margin: 0;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* Search Bar */
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 8px 20px;
+    height: 17px;
+    border-radius: 30px;
+    margin-right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border: solid darkgrey;
+}
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: solid darkgray;
+}
+.search button img {
+    width: 16px;
+}
+button {
+    margin-right: 40px;
+}
+
+/* 4 Week Program */
+
+.routine {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 0px;
+    margin-top: 30px;
+}
+h1 {
+    font-size: 100px;
+    color: white;
+    text-shadow: 3px 3px tan;
+}
+p {
+    color: black;
+    font-family: sans-serif;
+    font-size: 29px;
+    font-weight: 300;
+    padding: 10px;
+}
+.routine hr {
+    height: 5px;
+    background-color: white;
+    text-shadow: 3px 3px tan;
+}
+
+/* Images */
+
+.row {
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.img-as img {
+    width: 400px;
+    height: 400px;
+    border: solid;
+}
+.img-cb img {
+    width: 400px;
+    height: 400px;
+    border: solid;
+}
+.img-rc img {
+    width: 400px;
+    height: 400px;
+    border: solid;
+}
+.img-as figcaption, .img-cb figcaption, .img-rc figcaption {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Weekly Workouts */
+
+.weekly-col {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 80px;
+}
+.weekly-col h2 {
+    font-size: 100px;
+    color: white;
+    text-shadow: 3px 3px tan;
+}
+.weekly-col hr {
+    height: 5px;
+    background-color: white;
+    text-shadow: 3px 3px tan;
+}
+.weekly-col span {
+    font-weight: bold;
+}
+.box {
+    border: solid;
+    border-radius: 10px;
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+    margin: 50px;
+}
+
+/* The Plan Header */
+
+.plan {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 80px;
+}
+.plan h1 {
+    font-size: 100px;
+    color: white;
+    text-shadow: 3px 3px tan;
+}
+.plan hr {
+    height: 5px;
+    background-color: white;
+    text-shadow: 3px 3px tan;
+}
+
+/* Plan List */
+
+.plan-col {
+    margin: 50px;
+    display: grid;
+}
+.plan-col h3 {
+    padding-left: 25%;
+    color: white;
+    font-size: 25px;
+}
+.plan-list1 {
+    background-color: white;
+    width: 50%;
+    height: 120px;
+    border-radius: 5px;
+    border: solid;
+    margin-top: 15px;
+    place-self: center;
+}
+.plan-list2 {
+    background-color: white;
+    width: 50%;
+    height: 120px;
+    border-radius: 5px;
+    border: solid;
+    margin-top: 20px;
+    place-self: center;
+}
+.plan-list3 {
+    background-color: white;
+    width: 50%;
+    height: 120px;
+    border-radius: 5px;
+    border: solid;
+    margin-top: 20px;
+    place-self: center;
+}
+.plan-list4 {
+    background-color: white;
+    width: 50%;
+    height: 120px;
+    border-radius: 5px;
+    border: solid;
+    margin-top: 20px;
+    place-self: center;
+}
+.plan-list5 {
+    background-color: white;
+    width: 50%;
+    height: 120px;
+    border-radius: 5px;
+    border: solid;
+    margin-top: 20px;
+    place-self: center;
+}
+.plan-list6 {
+    background-color: white;
+    width: 50%;
+    height: 120px;
+    border-radius: 5px;
+    border: solid;
+    margin-top: 20px;
+    place-self: center;
+}
+.plan-list7 {
+    background-color: white;
+    width: 50%;
+    height: 120px;
+    border-radius: 5px;
+    border: solid;
+    margin-top: 20px;
+    place-self: center;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: black;
+    border: white solid 1px;
+}
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+}
+.footer p {
+    color: white;
+}
+.footer-col p {
+    display: inline-block;
+    text-align: center;
+    padding-left: 5%;
+}
+.footer-col p a {
+    text-decoration: none;
+}
+.footer-col p a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: tan;
+    display: block;
+    margin: 0;
+    transition: 0.5s;
+}
+.footer-col p a:hover::after {
+    width: 100%;
+}
+
+/* Responsive for Phone -----------------------------------------------*/
+
+@media(max-width: 700px) {
+    
+    /* Nav Bar */
+
+nav img {
+    width: 150px;
+    margin-bottom: 100px;
+}
+.nav-links ul li {
+    display: block; 
+}
+.nav-links ul li a {
+    font-size: 10px;
+}
+
+/* Search Bar */
+
+.search input {
+    height: 0;
+    width: 100px; 
+}
+.search button {
+    width: 17px;
+    height: 17px;
+}
+.search button img {
+    width: 17px;
+}
+
+/* 4 Week Program */
+
+h1 {
+    font-size: 40px;
+}
+p {
+    font-size: 20px;
+}
+
+/* Images */
+
+.row {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.img-as img {
+    width: 250px;
+    height: 250px;
+    border: solid;
+}
+.img-cb img {
+    width: 250px;
+    height: 250px;
+    border: solid;
+}
+.img-rc img {
+    width: 250px;
+    height: 250px;
+    border: solid;
+}
+.img-as figcaption, .img-cb figcaption, .img-rc figcaption {
+    font-size: 15px;
+}
+
+/* Weekly Workouts */
+
+.weekly-col h2 {
+    font-size: 40px;
+}
+
+/* The Plan Header */
+
+.plan h1 {
+    font-size: 40px;
+}
+
+/* Plan List */
+
+.plan-col {
+    margin: 50px;
+    display: grid;
+}
+.plan-col h3 {
+    padding-left: 13%;
+    color: white;
+    font-size: 18px;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    padding-left: 20px 0;
+}
+.footer h4 {
+    font-size: 15px;
+}
+.footer p {
+    font-size: 13px;
+}
+}
+
+/* Responsive for Tablet ----------------------------------------------*/
+
+@media(min-width: 768px) and (max-width: 1023px) {
+     
+/* Nav Bar */
+    
+nav img {
+    width: 150px;
+    padding-left: 8%;
+}
+.nav-links ul li a {
+    font-size: 15px;
+}
+
+/* Search Bar */
+
+.search input {
+    height: 7px;
+    font-size: 15px;
+}
+.search button {
+    width: 25px;
+    height: 25px;
+}
+
+/* 4 Week Program */
+
+h1 {
+    font-size: 80px;
+}
+p {
+    font-size: 20px;
+}
+
+/* Weekly Workouts */
+
+.weekly-col h2 {
+    font-size: 80px;
+}
+
+/* Images */
+
+.row {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img-as img {
+    width: 400px;
+    height: 400px;
+}
+.img-cb img {
+    width: 400px;
+    height: 400px;
+}
+.img-rc img {
+    width: 400px;
+    height: 400px;
+}
+.img-as, .img-cb, .img-rc, h3 a {
+    font-size: 20px;
+}
+
+/* The Plan Header */
+
+.plan h1 {
+    font-size: 80px;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    padding-left: 20px 0;
+}
+.footer h4 {
+    font-size: 25px;
+}
+.footer p {
+    font-size: 25px;
+}
+}
+
+
